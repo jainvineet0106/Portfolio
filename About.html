@@ -292,7 +292,7 @@
               <a href="https://www.instagram.com/jainvineet0106?igsh=Z3N1OXV0eHhjZHdk" target="_blank" rel="noopener">
                 <img src="image/instagram.png" alt="instagram"/>
               </a>
-              <!-- <img src="whatsapp.png" alt="whatsapp"/> -->
+              <!-- <img src="image/whatsapp.png" alt="whatsapp"/> -->
             </div>            
           </div>
         </div>
@@ -304,37 +304,26 @@
 
     <script>
       let skillsblock = document.getElementsByClassName("skillsblock");
-        let hasTriggered = false;
+      let hasTriggered = false;
 
-        function triggerProgressOnce() {
-          if (!hasTriggered) {
-            hasTriggered = true;
-            Progress();
-          }
+      function triggerProgressOnce() {
+        if (!hasTriggered) {
+          hasTriggered = true;
+          Progress();
         }
-        
-        // Device check: mobile or not
-        const isMobile = /Mobi|Android|iPhone/i.test(navigator.userAgent);
-        
-        if (isMobile) {
-          // Mobile: trigger on scroll (once)
-          window.onscroll = () => {
-            triggerProgressOnce();
-          };
-        } else {
-          // Desktop: trigger on load (once)
-          window.onload = () => {
-            triggerProgressOnce();
-          };
-        }
-      // let hasScrolled = false;
+      }
 
-      // window.onscroll = () => {
-      //   if (!hasScrolled) {
-      //     hasScrolled = true;
-      //     Progress();
-      //   }
-      // };
+      const isMobile = /Mobi|Android|iPhone/i.test(navigator.userAgent);
+
+      if (isMobile) {
+        window.onscroll = () => {
+          triggerProgressOnce();
+        };
+      } else {
+        window.onload = () => {
+          triggerProgressOnce();
+        };
+      }
 
       function Progress(){
         for(let i = 0; i<skillsblock.length;i++)
