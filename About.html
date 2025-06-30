@@ -298,9 +298,14 @@
 
     <script>
       let skillsblock = document.getElementsByClassName("skillsblock");
-      window.onload = () => {
-        Progress();
-      }
+      let hasScrolled = false;
+
+      window.onscroll = () => {
+        if (!hasScrolled) {
+          hasScrolled = true;
+          Progress();
+        }
+      };
 
       function Progress(){
         for(let i = 0; i<skillsblock.length;i++)
