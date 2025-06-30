@@ -48,6 +48,11 @@ body{
   list-style: none;
 }
 
+#selected_nav{
+  border-radius: 5px;
+  border-bottom: 2px solid #2979FF;
+}
+
 .nav ul li a{
   color: rgba(0, 0, 0, 0.644);
   font-weight: bold;
