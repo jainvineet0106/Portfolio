@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vineet Jain - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="image/V.png" />
+</head>
+<body>
+    <div class="navmain">
+      <div class="logo">
+        <img src="image/name logo.png" alt="logo" />
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="profile_photo" class="profile_photo">
+      <img src="image/Pro Vineet 2.jpg" alt="Profile-Photo"> 
+      <img onclick="showImg('close')" id="close" src="image/close.png" alt="close"> 
+    </div>
+    <div class="mainpage Home">
+      <div class="profile_discription">
+        <h1>Hi, I'm Vineet Jain</h1>
+        <h4>Full Stack Developer & UI/UX Designer</h4>
+        <p>Crafting beautiful digital experiences with clean code and thoughtful design. Specialized in building modern web applications that solve real-world problems.</p>
+        <div class="profile_discription_btn">
+          <button id="View_Project">View Projects</button>
+          <button id="Get_in_Touch" onclick="window.location.href='Contact.html'">Get in Touch</button>
+        </div>
+      </div>
+      <div onclick="showImg('show')" class="profile_photo">
+        <img src="image/Pro Vineet 2.jpg" alt="Profile-Photo">       
+      </div>
+    </div>
+    
+    <footer>
+      <div class="upper">
+        <div class="leftfooter">
+          <div class="logo">
+            <img src="image/name logo_white.png" alt="logo" />
+          </div>
+          <p>Crafting beautiful digital experiences with clean code and thoughtful design.</p>
+        </div>
+        <div class="rightfooter">
+          <div class="quicklinks">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Projects.html">Projects</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="connect">
+            <h3>Connect</h3>
+            <div class="icons">
+              <img src="image/github.png" alt="GitHub"/>
+              <img src="image/linkedin.png" alt="linkedin"/>
+              <img src="image/instagram.png" alt="instagram"/>
+              <!-- <img src="image/whatsapp.png" alt="whatsapp"/> -->
+            </div>            
+          </div>
+        </div>
+      </div>
+      <div class="lower">
+        <p>&copy; 2025 Vineet Jain. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      let profile = document.getElementById("profile_photo");
+      profile.classList.add("hidden");
+      function showImg(task){
+        if(task == 'show'){
+          document.getElementsByClassName("Home")[0].style.filter = "blur(7px)";
+          profile.classList.remove("hidden");
+        }
+        else if(task == 'close')
+        {
+          document.getElementsByClassName("Home")[0].style.filter = "blur(0)";
+          profile.classList.add("hidden");
+        }
+      }
+    </script>
+</body>
+</html>
