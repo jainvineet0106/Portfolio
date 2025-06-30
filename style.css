@@ -25,7 +25,7 @@ body{
   align-items: center;
 }
 
-.logo label, .logo img {
+.logo img {
   width: 60%;
   height: 100%;
 }
@@ -619,6 +619,9 @@ iframe{
 }
 
 @media only screen and (max-width:800px) {
+  .logo img {
+    width: 100%;
+  }
   .mainpage{
     height: 1000px;
     flex-direction: column;
