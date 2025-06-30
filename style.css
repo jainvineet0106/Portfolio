@@ -190,40 +190,6 @@ color: #fff;
   justify-content: end;
 }
 
-@media only screen and (max-width:750px) {
-  .rightfooter{
-    flex-direction: column;
-  }
-  .leftfooter{
-    width: 50%;
-  }
-  .mainpage{
-    height: 1000px;
-    flex-direction: column;
-  }
-  .profile_discription{
-    width: 90%;
-    margin: auto;
-  }
-  .profile_discription p{
-    width: 80%;
-  }
-  #profile_photo #profile_photo_img{
-    width: 500px;
-    height: 350px;
-  }
-  #profile_photo{
-    top: 60%;
-    left: 25%;
-  }
-
-  .upper{
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-}
-
 .quicklinks, .connect {
   width: auto;
   height: auto;
@@ -303,8 +269,8 @@ color: #fff;
 }
 
 .Professional_Bio, .Skills, .Professional_Experience, .Education{
-  height: auto;
   width: 47%;
+  height: auto;
   margin: 20px auto;
 }
 
@@ -336,12 +302,10 @@ color: #fff;
   font-size: 20px;
   margin: 16px;
 }
-
 .skill{
   height: auto;
   margin: 10px 0;
 }
-
 .label{
   display: flex;
   color: rgb(47, 46, 46);
@@ -361,11 +325,13 @@ color: #fff;
   margin: 0 auto;
   background-color: #cfcece;
 }
+
 .progress{
   height: 100%;
   border-radius: 10px;
   background-color: #4169E1;
 }
+
 
 .circle{
   width: 20px;
@@ -448,11 +414,9 @@ color: #fff;
   color: rgb(44, 43, 43);
   transition: transform 0.5s ease;
 }
-
 .projects_type ul li:hover{
   background-color: lightgray;
 }
-
 .projects_discription{
   width: 100%;
   height: auto;
@@ -461,8 +425,7 @@ color: #fff;
   display: flex;
   flex-wrap: wrap;
 }
-
-section{
+.projects_discription section{
   width: 32%;
   height: auto;
   border-radius: 20px;
@@ -470,24 +433,20 @@ section{
   margin: 20px 5px;
   box-shadow: 0 1px 0 rgb(225, 224, 224);
 }
-
 .project_img{
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
   width: 100%; 
   height: 55%;
 }
-
-section img{
+.project_img img{
   border-radius: 20px 20px 0 0;
   width: 100%;
   height: 100%;
 }
-
 .project_disc{
   width: 100%;
   height: auto;
 }
-
 .project_disc h3{
   margin: 25px 0 0 20px;
 }
@@ -502,7 +461,6 @@ section img{
   border-radius: 10px;
   margin: 10px 0 20px 10px;
 }
-
 .tool1{
   color: #1538aa;
   background-color: #c3cdf0;
@@ -520,24 +478,22 @@ section img{
   background-color: rgb(237, 201, 188)
 }
 
+
 .contact_page{
   height: auto;
   margin-bottom: 20px;
   background-color: whitesmoke;
   flex-direction: column;
 }
-
 .Contact{
   height: auto;
   display: flex;
 }
-
 .contact_form, .contact_info{
   width: 48%;
   height: auto;
   margin: 0 auto;
 }
-
 .contact_form form{
   width: 100%;
 }
@@ -549,7 +505,6 @@ section img{
 .contact_form label{
   font-size: 14px;
 }
-
 .contact_form table input, .contact_form table textarea{
   width: 100%;
   padding: 15px;
@@ -558,12 +513,10 @@ section img{
   box-sizing: border-box;
   outline: none;
 }
-
 .contact_form table input:focus, .contact_form table textarea:focus{
   border: 1.6px solid #4d90fe;
   box-shadow: 0 0 8px rgba(77, 144, 254, 0.6);
 }
-
 .contact_form table textarea{
   height: 130px;
   max-height: 130px;
@@ -580,35 +533,29 @@ section img{
 .contact_form table a:hover{
   background-color: #2d6acb;
 }
-
 .contact_form table tr td{
   padding: 10px;
 }
-
 .contact_info{
   padding-left: 30px;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 1px 2px rgb(169, 169, 169);
 }
-
 .contact_info h1{
   font-size: 27px;
 }
-
 .contact_card{
   width: 100%;
   height: auto;
   margin-bottom: 60px;
 }
-
 .card{
   width: 100%;
   height: auto;
   margin: 20px 0;
   display: flex;
 }
-
 .imglogo{
   width: 6%;
   height: 45px;
@@ -618,12 +565,10 @@ section img{
   border-radius: 10px;
   background-color: #d3e1f7;
 }
-
 .imglogo img{
   width: 50%;
   height: 60%;
 }
-
 .carddetail{
   width: auto;
   height: 40px;
@@ -642,7 +587,6 @@ section img{
 .carddetail a:hover{
   color: #2d6acb;
 }
-
 #Download_CV{
   padding: 10px 20px;
   cursor: pointer;
@@ -652,15 +596,132 @@ section img{
 #Download_CV:hover{
   background-color: rgb(231, 229, 229);
 }
-
 iframe{
   width: 100%;
   height: 100%;
   border: none;
   border-radius: 20px;
 }
-
 .location section{
   width: 100%;
   height: 250px;
+}
+#map-loader{
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #555;
+  z-index: 0;
+}
+
+@media only screen and (max-width:800px) {
+  .mainpage{
+    height: 1000px;
+    flex-direction: column;
+  }
+  .profile_discription{
+    width: 90%;
+    margin: auto;
+  }
+  .profile_discription p{
+    width: 80%;
+  }
+  #profile_photo #profile_photo_img{
+    width: 500px;
+    height: 350px;
+  }
+  #profile_photo{
+    top: 60%;
+    left: 25%;
+  }
+  .upper{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .leftfooter{
+    width: 50%;
+  }
+  .rightfooter{
+    flex-direction: column;
+  }
+  .about_bio_skill, .about_exp_edu{
+    flex-direction: column;
+  }
+  .Professional_Bio, .Skills, .Professional_Experience, .Education{
+    width: 80%;
+  }
+  .Professional_Bio p{
+    font-size: 15px;
+  }
+  .about{
+    height: auto;
+  }
+  .skillsboard{
+    flex-direction: column;
+  }
+  .skillsblock{
+    width: 100%;
+  }
+  .label{
+    margin-bottom: 5px;
+  }
+  .progressbar{
+    width: 95%;
+  }
+  .projects{
+    height: auto;
+  }
+  .projects p{
+    width: 80%;
+  }
+  .projects_discription{
+    flex-direction: column;
+  }
+  .projects_discription section{
+    width: 80%;
+    height: 350px;
+    margin: 20px auto;
+  }
+  .project_img{
+    height: 50%;
+  }
+  .project_disc{
+    height: auto;
+  }
+  .project_disc h3{
+    margin: 10px 0 0 20px;
+  }
+  .project_disc p{
+    width: 95%;
+    font-size: 15px;
+  }
+  .contact_page{
+    height: auto;
+  }
+  .contact_page .heading p{
+    width: 80%;
+  }
+  .Contact{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_form, .contact_info{
+    width: 80%;
+    height: auto;
+  }
+  .contact_info{
+    width: 90%;
+    height: 350px;
+    margin-top: 40px;
+  }
+  .location section{
+    width: 95%;
+    height: 250px;
+  }
 }
