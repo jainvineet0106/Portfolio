@@ -21,22 +21,18 @@
         </ul>
       </div>
     </div>
-    <div id="profile_photo" class="profile_photo">
-      <img id="profile_photo_img" src="image/Vineet.jpg" alt="Profile-Photo"> 
-      <img onclick="showImg('close')" id="close" src="image/close.png" alt="close"> 
-    </div>
     <div class="mainpage Home">
       <div class="profile_discription">
         <h1>Hi, I'm Vineet Jain</h1>
         <h4>Full Stack Developer & UI/UX Designer</h4>
         <p>Crafting beautiful digital experiences with clean code and thoughtful design. Specialized in building modern web applications that solve real-world problems.</p>
         <div class="profile_discription_btn">
-          <button id="View_Project" onclick="window.location.href='Projects.html'">View Projects</button>
+          <button id="View_Project">View Projects</button>
           <button id="Get_in_Touch" onclick="window.location.href='Contact.html'">Get in Touch</button>
         </div>
       </div>
       <div class="profile_photo">
-        <img  onclick="showImg('show')" src="image/Vineet.jpg" alt="Profile-Photo">       
+        <img src="image/Vineet.jpg" alt="Profile-Photo">       
       </div>
     </div>
     
@@ -71,7 +67,7 @@
                 <img src="image/instagram.png" alt="instagram"/>
               </a>
               <a href="https://www.facebook.com/share/19tpDkcazo/" target="_blank" rel="noopener">
-                <img src="image/facebook.png" alt="facebook"/>
+                <img src="image/facebook.png" alt="instagram"/>
               </a>
             </div>            
           </div>
@@ -81,21 +77,5 @@
         <p>&copy; 2025 Vineet Jain. All Rights Reserved.</p>
       </div>
     </footer>
-
-    <script>
-      let profile = document.getElementById("profile_photo");
-      profile.classList.add("hidden");
-      function showImg(task){
-        if(task == 'show'){
-          document.getElementsByClassName("Home")[0].style.filter = "blur(7px)";
-          profile.classList.remove("hidden");
-        }
-        else if(task == 'close')
-        {
-          document.getElementsByClassName("Home")[0].style.filter = "blur(0)";
-          profile.classList.add("hidden");
-        }
-      }
-    </script>
 </body>
 </html>

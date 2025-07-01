@@ -140,24 +140,6 @@ body{
   cursor: pointer;
 }
 
-#profile_photo{
-  position: absolute;
-  z-index: 1;
-  top: 12.5%;
-  left: 22%;
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-#close{
-  width: 20px;
-  height: 20px;
-  border: none;
-  box-shadow: none;
-}
-
 footer{
   width: 100%;
   height: auto;
@@ -484,7 +466,6 @@ color: #fff;
   background-color: rgb(237, 201, 188)
 }
 
-
 .contact_page{
   height: auto;
   margin-bottom: 20px;
@@ -592,15 +573,7 @@ color: #fff;
 .carddetail a:hover{
   color: #2d6acb;
 }
-#Download_CV{
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 10px;
-  border: 2px solid lightgray;
-}
-#Download_CV:hover{
-  background-color: rgb(231, 229, 229);
-}
+
 iframe{
   width: 100%;
   height: 100%;
@@ -635,16 +608,14 @@ iframe{
     width: 90%;
     margin: auto;
   }
+  .profile_discription h1{
+    font-size: 40px;
+  }
+  .profile_discription h4{
+    font-size: 25px;
+  }
   .profile_discription p{
     width: 80%;
-  }
-  #profile_photo #profile_photo_img{
-    width: 500px;
-    height: 350px;
-  }
-  #profile_photo{
-    top: 60%;
-    left: 25%;
   }
   .upper{
     justify-content: center;
@@ -652,7 +623,10 @@ iframe{
     flex-direction: column;
   }
   .leftfooter{
-    width: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .rightfooter{
     flex-direction: column;
@@ -700,6 +674,10 @@ iframe{
   }
   .project_disc{
     height: auto;
+  }
+  .project_disc span{
+    font-size: 10px;
+    margin: 5px 0 10px 5px;
   }
   .project_disc h3{
     margin: 10px 0 0 20px;
