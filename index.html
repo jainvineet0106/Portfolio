@@ -5,77 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vineet Jain - Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="image/Icon.png" />
+    <link rel="icon" href="image/V.png" />
 </head>
 <body>
-    <div class="navmain">
-      <div class="logo">
-        <img src="image/name logo.png" alt="logo" />
-      </div>
-      <div class="nav">
-        <ul>
-          <li id="selected_nav"><a href="index.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Projects.html">Projects</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-        </ul>
+  <div class="navmain">
+    <div class="logo">
+      <img src="image/name logo.png" alt="logo" />
+    </div>
+    <div class="nav">
+      <ul>
+        <li id="selected_nav"><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mainpage Home">
+    <div class="profile_discription">
+      <h1>Hi, I'm Vineet Jain</h1>
+      <h4>Full Stack Developer & UI/UX Designer</h4>
+      <p>Crafting beautiful digital experiences with clean code and thoughtful design. Specialized in building modern web applications that solve real-world problems.</p>
+      <div class="profile_discription_btn">
+        <button id="View_Project" onclick="window.location.href='Projects.html'">View Projects</button>
+        <button id="Get_in_Touch" onclick="window.location.href='Contact.html'">Get in Touch</button>
       </div>
     </div>
-    <div class="mainpage Home">
-      <div class="profile_discription">
-        <h1>Hi, I'm Vineet Jain</h1>
-        <h4>Full Stack Developer & UI/UX Designer</h4>
-        <p>Crafting beautiful digital experiences with clean code and thoughtful design. Specialized in building modern web applications that solve real-world problems.</p>
-        <div class="profile_discription_btn">
-          <button id="View_Project" onclick="window.location.href='Projects.html'">View Projects</button>
-          <button id="Get_in_Touch" onclick="window.location.href='Contact.html'">Get in Touch</button>
+    <div class="profile_photo">
+      <img src="image/Vineet.jpg" alt="Profile-Photo">
+    </div>
+  </div>
+
+  <section class="about-preview">
+    <div>
+      <h2>Who Am I?</h2>
+      <p>
+        I'm a passionate Full Stack Developer & UI/UX Designer, dedicated to building modern, clean and interactive web experiences. I love solving real-world problems using code and creativity.
+      </p>
+
+      <a href="About.html">
+        Learn More About Me →
+      </a>
+    </div>
+  </section>
+
+  <section class="testimonial-section">
+    <h2>Testimonials</h2>
+    <div class="testimonials">
+
+      <div class="testimonial">
+        <p>Vineet is a quick learner and always ready to take responsibility. His attention to detail really stands out.</p>
+        <div class="author">
+          <img src="https://i.pravatar.cc/60?img=9" alt="Author 1">
+          <div class="author-info">
+            <h4>Dr. Nisha Verma</h4>
+            <small>Professor, BTIRT</small>
+          </div>
         </div>
       </div>
-      <div class="profile_photo">
-        <img src="image/Vineet.jpg" alt="Profile-Photo">       
+
+      <div class="testimonial">
+        <p>He played a key role during our group project and handled frontend design like a pro. Highly recommend working with him.</p>
+        <div class="author">
+          <img src="https://i.pravatar.cc/60?img=12" alt="Author 2">
+          <div class="author-info">
+            <h4>Ankit Raj</h4>
+            <small>Project Teammate</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <p>During our internship, Vineet showed great technical and leadership skills. Very calm and creative problem solver.</p>
+        <div class="author">
+          <img src="https://i.pravatar.cc/60?img=16" alt="Author 3">
+          <div class="author-info">
+            <h4>Shruti Malhotra</h4>
+            <small>Intern at Eduskills</small>
+          </div>
+        </div>
       </div>
     </div>
-    
-    <footer>
-      <div class="upper">
-        <div class="leftfooter">
-          <div class="logo">
-            <img src="image/name logo_white.png" alt="logo" />
-          </div>
-          <p>Crafting beautiful digital experiences with clean code and thoughtful design.</p>
+  </section>
+
+  <section class="contact-preview">
+    <h2>Let's Connect</h2>
+    <p>
+      Have a project or idea in mind? Feel free to reach out!
+    </p>
+
+    <section class="contact-previewparts">
+      <div>
+        <form>
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-previewparts_location">
+        <iframe 
+        id="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55502.33845575606!2d78.70742693548203!3d23.837480224164963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3978d14a2cf591af%3A0xf446eaa2b5281370!2sSagar%2C%20Madhya%20Pradesh!5e1!3m2!1sen!2sin!4v1750951354534!5m2!1sen!2sin"
+        allowfullscreen="" 
+        loading="lazy"
+        title="Map showing Sagar, Madhya Pradesh, India"></iframe>
+      </div>
+    </section>
+  </section>
+   
+  <footer>
+    <div class="upper">
+      <div class="leftfooter">
+        <div class="logo">
+          <img src="image/name logo_white.png" alt="logo" />
         </div>
-        <div class="rightfooter">
-          <div class="quicklinks">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="About.html">About</a></li>
-              <li><a href="Projects.html">Projects</a></li>
-              <li><a href="Contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="connect">
-            <h3>Connect</h3>
-            <div class="icons">
-              <a href="https://github.com/jainvineet0106" target="_blank" rel="noopener">
-                <img src="image/github.png" alt="GitHub"/>
-              </a>
-              <a href="https://www.linkedin.com/in/vineet-jain-866b97241" target="_blank" rel="noopener">
-                <img src="image/linkedin.png" alt="linkedin"/>
-              </a>
-              <a href="https://www.instagram.com/jainvineet0106?igsh=Z3N1OXV0eHhjZHdk" target="_blank" rel="noopener">
-                <img src="image/instagram.png" alt="instagram"/>
-              </a>
-              <a href="https://www.facebook.com/share/19tpDkcazo/" target="_blank" rel="noopener">
-                <img src="image/facebook.png" alt="instagram"/>
-              </a>
-            </div>            
-          </div>
+        <p>Crafting beautiful digital experiences with clean code and thoughtful design.</p>
+      </div>
+      <div class="rightfooter">
+        <div class="quicklinks">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="connect">
+          <h3>Connect</h3>
+          <div class="icons">
+            <a href="https://github.com/jainvineet0106" target="_blank" rel="noopener">
+              <img src="image/github.png" alt="GitHub"/>
+            </a>
+            <a href="https://www.linkedin.com/in/vineet-jain-866b97241" target="_blank" rel="noopener">
+              <img src="image/linkedin.png" alt="linkedin"/>
+            </a>
+            <a href="https://www.instagram.com/jainvineet0106?igsh=Z3N1OXV0eHhjZHdk" target="_blank" rel="noopener">
+              <img src="image/instagram.png" alt="instagram"/>
+            </a>
+            <a href="https://www.facebook.com/share/19tpDkcazo/" target="_blank" rel="noopener">
+              <img src="image/facebook.png" alt="instagram"/>
+            </a>
+          </div>            
         </div>
       </div>
-      <div class="lower">
-        <p>&copy; 2025 Vineet Jain. All Rights Reserved.</p>
-      </div>
-    </footer>
+    </div>
+    <div class="lower">
+      <p>&copy; 2025 Vineet Jain. All Rights Reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>

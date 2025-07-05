@@ -3,18 +3,24 @@ body{
   padding: 0;
   background-color: #f0f8ff;
   font-family: 'Poppins', sans-serif;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              url('image/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
 }
 
 .navmain{
+  z-index: 2;
   width: 100%;
   height: 70px;
   display: flex;
-  justify-content: space-between;
-  background-color: #fff;
-  box-shadow: 0 1px 1px #e0f0ff;
-  z-index: 2;
-  border-radius: 0 0 10px 10px;
   position: fixed;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  justify-content: space-between;
+  box-shadow: 0 1px 1px #e0f0ff;
 }
 
 .logo{
@@ -79,18 +85,21 @@ body{
   font-size: 50px;
 }
 
-
 .profile_discription h4{
   margin: 0 0 25px 25px;
   font-size: 25px;
-  color: #364465;
+  /* color: #364465; */
+  color: #a5c6f3;
+
 }
 
 .profile_discription p{
   margin: 0 0 25px 25px;
-  font-size: 15px;
+  font-size: 17px;
   width: 50%;
-  color: #364465;
+  /* color: #364465; */
+  color: #d4dfee;
+
 }
 
 
@@ -116,6 +125,8 @@ body{
 #Get_in_Touch{
   background-color: transparent;
   border: 2px solid gray;
+  color: #99bae7;
+
 }
 
 .profile_photo{
@@ -140,12 +151,191 @@ body{
   cursor: pointer;
 }
 
+.about-preview{
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-preview div{
+  max-width: 800px;
+  margin: auto;
+}
+.about-preview div h2{
+  font-size: 36px;
+  /* color: #1f3a60; */
+  color: #99bae7;
+  margin-bottom: 20px;
+}
+.about-preview div p{
+  font-size: 18px;
+  /* color: #444; */
+  color: #b5b2b2;
+  line-height: 1.7;
+}
+.about-preview div a{
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #3f80ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.about-preview div a:hover{
+  background-color: #285dd2;
+}
+
+.testimonial-section {
+  max-width: 90%;
+  margin: 30px auto;
+  text-align: center;
+  /* background-color: blue; */
+}
+
+.testimonial-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  /* color: #222; */
+  color: #99bae7;
+  /* background-color: RED; */
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.testimonial {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.testimonial::before {
+  content: "❝";
+  font-size: 4rem;
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  color: #5987de;
+}
+
+.testimonial p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.testimonial .author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.testimonial .author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial .author-info {
+  text-align: left;
+}
+
+.testimonial .author-info h4 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #222;
+}
+
+.testimonial .author-info small {
+  color: #777;
+}
+
+.contact-preview{
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+.contact-preview h2{
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.contact-preview p{
+  font-size: 18px; 
+  margin-bottom: 40px;
+}
+.contact-preview .contact-previewparts{
+  width: 95%;
+  height: 500px;
+  margin: auto;
+  display: flex;
+}
+
+.contact-previewparts_location{
+  background: whitesmoke;
+  border-radius: 10px;
+}
+.contact-previewparts_location iframe{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.contact-preview .contact-previewparts div{
+  width: 49%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.contact-preview .contact-previewparts div form{
+  width: 100%;
+  height: 100%;
+  margin: 10% auto;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.contact-preview .contact-previewparts div form input, 
+.contact-preview .contact-previewparts div form textarea{
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.contact-preview .contact-previewparts div form button{
+  padding: 12px;
+  background-color: #3f80ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-preview .contact-previewparts div form button:hover{
+  background-color: #285dd2;
+}
+
 footer{
   width: 100%;
   height: auto;
   background-color: #111827;
   border-radius: 10px 10px 0 0;
   z-index: 2;
+  box-shadow: 0 -1px 6px #334e8e;
 }
 
 .upper{
@@ -265,6 +455,7 @@ color: #fff;
   text-align: justify;
   font-size: 18px;
   color: rgb(56, 55, 55);
+  color: #bfc1c6;
 }
 
 .Skills{
@@ -288,6 +479,7 @@ color: #fff;
 .skillsblock p{
   font-size: 20px;
   margin: 16px;
+  color: #292a2b;
 }
 .skill{
   height: auto;
@@ -303,6 +495,7 @@ color: #fff;
 .label p{
   font-size: 15px;
   margin: 0 16px;
+  color: #4d4e4e;
 }
 
 .progressbar{
@@ -320,7 +513,6 @@ color: #fff;
   background-color: #4169E1;
 }
 
-
 .circle{
   width: 20px;
   height: 20px;
@@ -334,6 +526,7 @@ color: #fff;
   font-weight: lighter;
   margin: 0;
   font-size: 20px;
+
 }
 
 .partcontain{
@@ -344,7 +537,7 @@ color: #fff;
 }
 
 .partcontain p{
-  color: #0000EE;
+  color: #3e3ee3;
   font-size: 18px;
   margin: 0 20px;
   padding-top: 5px;
@@ -354,12 +547,14 @@ color: #fff;
   font-size: 18px;
   margin: 10px 20px;
   padding-bottom: 30px;
+  color: #bac1ce;
 }
 
 .partcontain ul li{
   margin: 10px 0;
   font-size: 18px;
-  color: rgb(63, 62, 62);
+  /* color: rgb(63, 62, 62); */
+  color: #9fb1d3;
 }
 
 .heading p{
@@ -416,9 +611,9 @@ color: #fff;
 .projects_discription section{
   width: 32%;
   height: auto;
+  margin: 20px 5px;
   border-radius: 20px;
   background-color: white;
-  margin: 20px 5px;
   box-shadow: 0 1px 0 rgb(225, 224, 224);
 }
 .project_img{
@@ -437,7 +632,9 @@ color: #fff;
 }
 .project_disc h3{
   margin: 25px 0 0 20px;
-}
+  color: #525253;
+}  
+
 .project_disc p{
   color: rgb(48, 47, 47);
   margin: 10px 20px 20px 20px;
@@ -469,7 +666,7 @@ color: #fff;
 .contact_page{
   height: auto;
   margin-bottom: 20px;
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
   flex-direction: column;
 }
 .Contact{
@@ -491,6 +688,8 @@ color: #fff;
 }
 .contact_form label{
   font-size: 14px;
+  color: #bdcbe7;
+
 }
 .contact_form table input, .contact_form table textarea{
   width: 100%;
@@ -528,9 +727,11 @@ color: #fff;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 1px 2px rgb(169, 169, 169);
+  color: #111827;
 }
 .contact_info h1{
   font-size: 27px;
+  color: #111827;
 }
 .contact_card{
   width: 100%;
@@ -617,6 +818,15 @@ iframe{
   .profile_discription p{
     width: 80%;
   }
+
+  .contact-preview .contact-previewparts{
+    height: auto;
+    flex-direction: column;
+  }
+  .contact-preview .contact-previewparts div{
+    width: 95%;
+  }
+
   .upper{
     justify-content: center;
     align-items: center;
